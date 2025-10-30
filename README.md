@@ -1,15 +1,23 @@
-# Elysia with Bun runtime
+# E-Commerce API Service
 
-## Getting Started
-To get started with this template, simply paste this command into your terminal:
+> 📌 [Project URL on Roadmap.sh](https://roadmap.sh/projects/ecommerce-api)
+
+## 🧱 Tech Stack
+
+- **Backend**: Elysia
+- **Database**: MongoDB
+- **Authentication**: JWT
+
 ```bash
-bun create elysia ./elysia-example
+# Set your environment variables in `.env`
+DATABASE_URL=your_mongo_url
+JWT_SECRET=your_secret_key
+STRIPE_SECRET=stripe_secret_key
 ```
 
-## Development
-To start the development server run:
-```bash
-bun run dev
-```
-
+### Run the server
 Open http://localhost:3000/ with your browser to see the result.
+
+openapi http://localhost:3000/api/openapi
+
+![image (1)](https://img2.pic.in.th/pic/image-1f13ab9e2bc54c9ea.png)
