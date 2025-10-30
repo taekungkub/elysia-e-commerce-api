@@ -12,7 +12,7 @@
 # Set your environment variables in `.env`
 DATABASE_URL=your_mongo_url
 JWT_SECRET=your_secret_key
-STRIPE_SECRET=stripe_secret_key
+PORT=your_port
 ```
 
 ### Run the server
