@@ -1,0 +1,14 @@
+version: '3.8'
+services:
+  elysia-e-commerce-api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: elysia-e-commerce-api
+    environment:
+      - PORT=$PORT
+      - MONGO_URL=$MONGO_URL
+      - JWT_SECRET=$JWT_SECRET
+    ports:
+      - 3000:3000
+    restart: on-failure

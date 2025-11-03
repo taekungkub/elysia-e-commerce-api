@@ -10,6 +10,10 @@ import { productsRouter } from "./modules/products";
 import { categoryRouter } from "./modules/category";
 import { cartRouter } from "./modules/cart";
 
+console.log(process.env.MONGO_URL);
+
+console.log(process.env.PORT);
+
 // Connect to MongoDB
 await initialDb();
 
