@@ -12,3 +12,20 @@ services:
     ports:
       - 3000:3000
     restart: on-failure
+
+  mongo:
+    image: bitnami/mongodb:latest
+    container_name: mongo
+    environment:
+      MONGODB_REPLICA_SET_MODE: primary
+      MONGODB_REPLICA_SET_NAME: rs0
+      MONGODB_REPLICA_SET_KEY: examplekey
+      MONGODB_ROOT_USER: root
+      MONGODB_ROOT_PASSWORD: example
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo:/bitnami/mongodb
+
+volumes:
+  mongo:
