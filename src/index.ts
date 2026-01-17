@@ -31,9 +31,9 @@ const app = new Elysia({ prefix: "/api" })
   .listen(process.env.PORT || 3000);
 
 console.log(
-  `Server is running at http://${app.server?.hostname}:${app.server?.port}`
+  `Server is running at http://${app.server?.hostname}:${app.server?.port}`,
 );
 
 console.log(
-  `Openapi is running at http://${app.server?.hostname}:${app.server?.port}/api/openapi`
+  `Openapi is running at http://${app.server?.hostname}:${app.server?.port}/api/openapi`,
 );
